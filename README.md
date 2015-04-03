@@ -60,13 +60,13 @@ new DigitsCordova('consumerKEy', options)
   .errorCallback(errorOccurredCallback) //If digits was not rendered properly
   
 ###Options include
-  ####autoFill {boolean}(default: true)
+####autoFill {boolean}(default: true)
   By setting this true, and if com.simonmacdonald.telephonenumber is installed properly then the app will automatically fill the phone number and country code
   
-  ####smsIntercept {boolean}(default: true)
+####smsIntercept {boolean}(default: true)
   By setting this true, and if com.rjfun.cordova.sms is installed properly the app will intercept sms after user has requested for one.  This will turn itself off when digits is closed.
   
-  ####autoProceed {boolean}(default: true)
+####autoProceed {boolean}(default: true)
   By setting this true and if sms is being intercepted then it will automatically confirm and close digits when the sms is intercepted properly.
 
 
