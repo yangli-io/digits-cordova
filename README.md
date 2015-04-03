@@ -54,10 +54,12 @@ In your index.html page
 ```
 
 ##API
+```javascript
 new DigitsCordova('consumerKEy', options)
   .successCallback(loginCallback)  //When user successfully logs in
   .failCallback(failedLoginCallback) //When user failed to login
   .errorCallback(errorOccurredCallback) //If digits was not rendered properly
+```  
   
 ###Options include
 ####autoFill {boolean}(default: true)
