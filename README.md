@@ -3,18 +3,18 @@ Integrating digits with cordova
 Additionally, this package can autofill phone number and even intercept SMS
 
 ## Installation
-'''
+```
   bower install digits-cordova
   cordova plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git
   
   /* Optional cordova plugins */
   cordova plugin add com.simonmacdonald.telephonenumber
   cordova plugin add com.rjfun.cordova.sms
-'''
+```
 
 In your index.html page
 
-'''html
+```html
   <script type="text/javascript" src="cordova.js"></script>
   
   <!-- optional -->
@@ -24,15 +24,15 @@ In your index.html page
   <!-- required -->
   <script type="text/javascript" src="bower_components/inappbrowser.js"></script>
   <script type="text/javascript" src="bower_components/digitsCordova.js"></script>
-'''
+```
 
 ##Usage
 
-'''html
+```html
   <button onClick="openDigits()">Sign up with digits</button>
-'''
+```
 
-'''javascript
+```javascript
   function openDigits(){
     var digits = new DigitsCordova('gmoaaZhEG88hMQUdpWHnF1IAz'); //Replace with your own consumerKey
       digits.open()
@@ -51,7 +51,7 @@ In your index.html page
               //error
           })
   }
-'''
+```
 
 ##API
 new DigitsCordova('consumerKEy', options)
