@@ -1,6 +1,7 @@
 {
   "name": "digits-cordova",
   "version": "0.0.0",
+  "main": ["digitsCordova.js", "inappbrowser.js", "telephonenumber.js", "SMS.js"],
   "description": "Integrating digits with cordova/phonegap apps",
   "keywords": [
     "cordova",
