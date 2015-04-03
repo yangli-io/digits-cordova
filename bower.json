@@ -1,0 +1,14 @@
+{
+  "name": "digits-cordova",
+  "version": "0.0.0",
+  "description": "Integrating digits with cordova/phonegap apps",
+  "keywords": [
+    "cordova",
+    "phonegap",
+    "digits"
+  ],
+  "authors": [
+    "Yang Li"
+  ],
+  "license": "MIT"
+}
