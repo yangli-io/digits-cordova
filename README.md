@@ -55,7 +55,7 @@ In your index.html page
 
 ##API
 ```javascript
-new DigitsCordova('consumerKEy', options)
+new DigitsCordova('consumerKey', options)
   .successCallback(loginCallback)  //When user successfully logs in
   .failCallback(failedLoginCallback) //When user failed to login
   .errorCallback(errorOccurredCallback) //If digits was not rendered properly
@@ -70,5 +70,12 @@ new DigitsCordova('consumerKEy', options)
   
 ####autoProceed {boolean}(default: true)
   By setting this true and if sms is being intercepted then it will automatically confirm and close digits when the sms is intercepted properly.
+  
+*Additionally, if you don't include the phonenumber and sms cordova packages, these will not work.
 
-
+```javascript
+new DigitsCordova('consumerKey', {autoFill: false, smsIntercept: false, autoProceed: false})
+  .successCallback(loginCallback)  //When user successfully logs in
+  .failCallback(failedLoginCallback) //When user failed to login
+  .errorCallback(errorOccurredCallback) //If digits was not rendered properly
+```  
