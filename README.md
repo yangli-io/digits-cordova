@@ -34,7 +34,7 @@ In your index.html page
 
 ```javascript
   function openDigits(){
-    var digits = new DigitsCordova('gmoaaZhEG88hMQUdpWHnF1IAz', 'http://yourUrl.com'); //Replace with your own consumerKey and your url
+    var digits = new DigitsCordova('gmoaaZhEG88hMQUdpWHnF1IAz', 'http://cannonballapp.io/'); //Replace with your own consumerKey and your url
       digits.open()
           .successCallback(function(loginResponse){
               var oAuthHeaders = loginResponse.oauth_echo_headers;
@@ -55,7 +55,7 @@ In your index.html page
 
 ##API
 ```javascript
-new DigitsCordova('consumerKey', options)
+new DigitsCordova('consumerKey', 'http://yourUrl' options)
   .successCallback(loginCallback)  //When user successfully logs in
   .failCallback(failedLoginCallback) //When user failed to login
   .errorCallback(errorOccurredCallback) //If digits was not rendered properly
