@@ -280,7 +280,7 @@
 	 * @param {string|number} consumerKey
 	 * @param {object} [options] - {autofill: true, smsIntercept: true}
 	 */
-	window.DigitsCordova = function DigitsCordova(consumerKey, options){
+	window.DigitsCordova = function DigitsCordova(consumerKey, callbackLink, options){
 
 		var _this = this;
 
@@ -347,7 +347,7 @@
 				if (cordova.InAppBrowser){
 					//Open inAppBrowser to the twitter digits site
 					
-					var openWindow = cordova.InAppBrowser.open('https://www.digits.com/login?consumer_key=' + _this.consumerKey + '&host=' + location.href, "_blank");
+					var openWindow = cordova.InAppBrowser.open('https://www.digits.com/login?consumer_key=' + _this.consumerKey + '&host=' + callbackLink, "_blank");
 					//listen to loadstart event which fires off whenever the inAppBrowser starts loading any site
 					openWindow.addEventListener('loadstart', function(event){
 						var url = event.url;

@@ -34,7 +34,7 @@ In your index.html page
 
 ```javascript
   function openDigits(){
-    var digits = new DigitsCordova('gmoaaZhEG88hMQUdpWHnF1IAz'); //Replace with your own consumerKey
+    var digits = new DigitsCordova('gmoaaZhEG88hMQUdpWHnF1IAz', 'http://yourUrl.com'); //Replace with your own consumerKey and your url
       digits.open()
           .successCallback(function(loginResponse){
               var oAuthHeaders = loginResponse.oauth_echo_headers;
