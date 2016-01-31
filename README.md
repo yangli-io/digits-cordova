@@ -55,7 +55,7 @@ In your index.html page
 
 ##API
 ```javascript
-new DigitsCordova('consumerKey', 'http://yourUrl' options)
+new DigitsCordova('consumerKey', 'http://yourUrl', options)
   .successCallback(loginCallback)  //When user successfully logs in
   .failCallback(failedLoginCallback) //When user failed to login
   .errorCallback(errorOccurredCallback) //If digits was not rendered properly
@@ -74,7 +74,7 @@ new DigitsCordova('consumerKey', 'http://yourUrl' options)
 *Additionally, if you don't include the phonenumber and sms cordova packages, these will not work.
 
 ```javascript
-new DigitsCordova('consumerKey', {autoFill: false, smsIntercept: false, autoProceed: false})
+new DigitsCordova('consumerKey', 'http://yourUrl', {autoFill: false, smsIntercept: false, autoProceed: false})
   .successCallback(loginCallback)  //When user successfully logs in
   .failCallback(failedLoginCallback) //When user failed to login
   .errorCallback(errorOccurredCallback) //If digits was not rendered properly
